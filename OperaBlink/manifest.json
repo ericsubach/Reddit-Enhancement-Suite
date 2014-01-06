@@ -1,8 +1,8 @@
 {
 	"name": "Reddit Enhancement Suite",
-	"version": "4.3.0",
+	"version": "4.3.1.2",
 	"manifest_version": 2,
-	"minimum_chrome_version": "20.0",
+	"minimum_chrome_version": "26.0",
 	"description": "Reddit Enhancement Suite - a group of enhancements for browsing Reddit",
 	"background": {
 		"scripts": ["background.js"]
@@ -19,7 +19,7 @@
 				"https://*.reddit.com/*"
 			],
 			"js": [
-				"jquery-1.9.1.min.js",
+				"jquery-1.10.2.min.js",
 				"guiders-1.2.8.js",
 				"jquery.dragsort-0.6.js",
 				"jquery-fieldselection.min.js",
@@ -60,5 +60,8 @@
 		"http://api.tumblr.com/v2/blog/*/posts?api_key=*&id=*",
 		"https://mediacru.sh/*",
 		"http://noembed.com/embed?url=*"
+	],
+	"optional_permissions": [
+		"https://api.twitter.com/*"
 	]
 }
